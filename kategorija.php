@@ -1,4 +1,6 @@
 <?php
+session_start();
+error_reporting(0);
 $category = $_GET['category'];
 $display_category = ucfirst($category);
 $display_category= str_replace('_',' ',$display_category);
@@ -11,21 +13,12 @@ $display_category=str_replace('Skola', 'Škola',$display_category);
 <html lang="en" dir="ltr">
 
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" type="text/css" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <script type="text/javascript">
-    function home(){
-      window.location.replace("index.php");
-    }
-    function politika(){
-      window.location.replace("politika.php");
-    }
-
-
-    </script>
 
     <title>ForUmmm</title>
 </head>
@@ -34,14 +27,28 @@ $display_category=str_replace('Skola', 'Škola',$display_category);
 
 <body>
 <header>
-     <a href="#" onclick="home();" style="color:black;">   <h1 class="logo">ForUmmm</h1> </a>
+     <a href="index.php"  style="color:black;">   <h1 class="logo">ForUmmm</h1> </a>
      <input type="checkbox" id="nav-toggle" class="nav-toggle">
      <nav>
           <ul>
-               <li><a href="#" onclick="home();">Home</a></li>
-               <li><a href="#">About</a></li>
+               <li><a href="index.php">Home</a></li>
+               <li><a href="about.php">About</a></li>
                <li><a href="#">Search</a></li>
-               <li><a href="#">Sign In</a></li>
+               <?php
+               if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+                 echo "<li><a href='signup.php'>Sign Up</a></li>
+                 <li><a href='login.php'>Log In</a></li>";
+               }else {
+                 $username = $_SESSION["username"];
+
+                 echo "<li>Dobrodošli, ".$username;
+                 echo "<li><a href='account.php'>Moj Profil</a> ";
+                 echo "<li><a href='logout.php'>Log Out</a></li>";
+               }
+
+
+
+                ?>
 
           </ul>
      </nav>
@@ -72,11 +79,20 @@ $display_category=str_replace('Skola', 'Škola',$display_category);
                    <div class="main_content">
                      <?php
                      require 'includes/dbconnect.inc.php';
+                     $alert = $_GET['alert'];
+
+                     if($alert=='ispisi'){
+                      echo"<script> alert('Pitanje je izbrisano')</script>";
+                       $alert='false';
+                     }else if($alert=='ispisi1'){
+                       echo"<script> alert('Pitanje je premješteno')</script>";
+                     }
                      $query = "SELECT naslov,id FROM $category";
 
                      $result = mysqli_query($conn, $query);
                      while ($row = $result->fetch_assoc()) {
-                       echo "<a href='pitanje.php?category=".$category."&id=".$row['id']."'>".$row['naslov']."</a>  <br>";
+                       echo "<a href='pitanje.php?category=".$category."&id=".$row['id']."'>".$row['naslov']."</a> <br>";
+
                      }
                       ?>
                        <div class="f_title">

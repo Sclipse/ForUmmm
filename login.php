@@ -20,12 +20,12 @@
 
 <body>
 <header>
-     <a href="#" onclick="home();" style="color:black;">   <h1 class="logo">ForUmmm</h1> </a>
+     <a href="index.php" style="color:black;">   <h1 class="logo">ForUmmm</h1> </a>
      <input type="checkbox" id="nav-toggle" class="nav-toggle">
      <nav>
           <ul>
-               <li><a href="#" onclick="home();">Home</a></li>
-               <li><a href="#">About</a></li>
+               <li><a href="index.php">Home</a></li>
+               <li><a href="about.php">About</a></li>
                <li><a href="#">Search</a></li>
 
           </ul>
@@ -55,11 +55,19 @@
              </div>
               <div class="f_content">
                    <div class="main_content">
+
                      <form  action="includes/login.inc.php" method="post">
                        Username:<input type="text" name="username" value=""> <br>
                        Password:<input type="password" name="pass" value=""> <br>
                        <input type="submit" name="login-submit" value="Submit">
                      </form>
+                     <br><br><br><hr><br>
+                    <h2>Admin Log in</h2>
+                    <form action="includes/login.inc.php" method="post">
+                      Username: <input type="text" name="adminusername" value=""><br>
+                      Password: <input type="password" name="adminpassword" value=""><br>
+                      <input type="submit" name="adminlogin-submit" value="Submit">
+                    </form>
                        <div class="f_title">
 
                       </div>
