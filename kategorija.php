@@ -1,62 +1,15 @@
 <?php
-session_start();
 error_reporting(0);
 $category = $_GET['category'];
 $display_category = ucfirst($category);
 $display_category= str_replace('_',' ',$display_category);
 $display_category=str_replace('zivot','život',$display_category );
 $display_category=str_replace('Skola', 'Škola',$display_category);
+  include("header.php");
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" type="text/css" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-
-    <title>ForUmmm</title>
-</head>
-
-<!-- HEADER -->
-
-<body>
-<header>
-     <a href="index.php"  style="color:black;">   <h1 class="logo">ForUmmm</h1> </a>
-     <input type="checkbox" id="nav-toggle" class="nav-toggle">
-     <nav>
-          <ul>
-               <li><a href="index.php">Home</a></li>
-               <li><a href="about.php">About</a></li>
-               <li><a href="#">Search</a></li>
-               <?php
-               if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-                 echo "<li><a href='signup.php'>Sign Up</a></li>
-                 <li><a href='login.php'>Log In</a></li>";
-               }else {
-                 $username = $_SESSION["username"];
-
-                 echo "<li>Dobrodošli, ".$username;
-                 echo "<li><a href='account.php'>Moj Profil</a> ";
-                 echo "<li><a href='logout.php'>Log Out</a></li>";
-               }
-
-
-
-                ?>
-
-          </ul>
-     </nav>
-     <label for="nav-toggle" class="nav-toggle-label">
-          <span></span>
-     </label>
-</header>
-
 <!-- FORUM -->
 
     <div class="forum">

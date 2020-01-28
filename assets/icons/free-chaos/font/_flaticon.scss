@@ -1,0 +1,139 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 22/06/2016 15:11
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-auricular:before { content: "\f100"; }
+.flaticon-bluetooth:before { content: "\f101"; }
+.flaticon-bookmark-outline:before { content: "\f102"; }
+.flaticon-business-bars-graphic:before { content: "\f103"; }
+.flaticon-business-statistics-curve-line-graphic:before { content: "\f104"; }
+.flaticon-cellphone-outline:before { content: "\f105"; }
+.flaticon-chat-message-circular-speech-bubble:before { content: "\f106"; }
+.flaticon-circle-outline:before { content: "\f107"; }
+.flaticon-clock-circular-outline:before { content: "\f108"; }
+.flaticon-cloud-of-circles-with-pixels-rain:before { content: "\f109"; }
+.flaticon-cross:before { content: "\f10a"; }
+.flaticon-email-envelope-outline:before { content: "\f10b"; }
+.flaticon-file-outline:before { content: "\f10c"; }
+.flaticon-file-outline-with-text-lines:before { content: "\f10d"; }
+.flaticon-home-web-button-outline:before { content: "\f10e"; }
+.flaticon-key:before { content: "\f10f"; }
+.flaticon-layout-design-interface-square-button-outline:before { content: "\f110"; }
+.flaticon-layout-design-with-header-square-button-outline:before { content: "\f111"; }
+.flaticon-layout-square-outlined-button-of-three-columns-with-the-header:before { content: "\f112"; }
+.flaticon-list-interface-items:before { content: "\f113"; }
+.flaticon-locked-padlock-outline:before { content: "\f114"; }
+.flaticon-map-folded-paper-outline:before { content: "\f115"; }
+.flaticon-menu-of-three-lines:before { content: "\f116"; }
+.flaticon-minus-horizontal-straight-line:before { content: "\f117"; }
+.flaticon-moon-crescent-phase-outline:before { content: "\f118"; }
+.flaticon-musical-note:before { content: "\f119"; }
+.flaticon-pencil-outline:before { content: "\f11a"; }
+.flaticon-placeholder-outline:before { content: "\f11b"; }
+.flaticon-play-right-arrow-triangle-outline:before { content: "\f11c"; }
+.flaticon-plus-sign-to-add:before { content: "\f11d"; }
+.flaticon-power-button:before { content: "\f11e"; }
+.flaticon-right-arrows-couple:before { content: "\f11f"; }
+.flaticon-search:before { content: "\f120"; }
+.flaticon-speaker-less-volume-outlined-interface-sign:before { content: "\f121"; }
+.flaticon-speaker-outline-with-equal-sign:before { content: "\f122"; }
+.flaticon-speaker-plus-sign:before { content: "\f123"; }
+.flaticon-speaker-volume-outlined-interface-tool:before { content: "\f124"; }
+.flaticon-square-button-outline-of-three-vertical-bars:before { content: "\f125"; }
+.flaticon-square-outlined-shape:before { content: "\f126"; }
+.flaticon-star-outline:before { content: "\f127"; }
+.flaticon-sunny-day:before { content: "\f128"; }
+.flaticon-table-grid-of-nine-squares:before { content: "\f129"; }
+.flaticon-tag-outline:before { content: "\f12a"; }
+.flaticon-three-circles-and-a-bolt:before { content: "\f12b"; }
+.flaticon-three-circles-group:before { content: "\f12c"; }
+.flaticon-two-switches:before { content: "\f12d"; }
+.flaticon-two-vertical-parallel-lines:before { content: "\f12e"; }
+.flaticon-up-arrow-lines:before { content: "\f12f"; }
+.flaticon-user-outline:before { content: "\f130"; }
+.flaticon-verification-mark:before { content: "\f131"; }
+    
+    $font-Flaticon-auricular: "\f100";
+    $font-Flaticon-bluetooth: "\f101";
+    $font-Flaticon-bookmark-outline: "\f102";
+    $font-Flaticon-business-bars-graphic: "\f103";
+    $font-Flaticon-business-statistics-curve-line-graphic: "\f104";
+    $font-Flaticon-cellphone-outline: "\f105";
+    $font-Flaticon-chat-message-circular-speech-bubble: "\f106";
+    $font-Flaticon-circle-outline: "\f107";
+    $font-Flaticon-clock-circular-outline: "\f108";
+    $font-Flaticon-cloud-of-circles-with-pixels-rain: "\f109";
+    $font-Flaticon-cross: "\f10a";
+    $font-Flaticon-email-envelope-outline: "\f10b";
+    $font-Flaticon-file-outline: "\f10c";
+    $font-Flaticon-file-outline-with-text-lines: "\f10d";
+    $font-Flaticon-home-web-button-outline: "\f10e";
+    $font-Flaticon-key: "\f10f";
+    $font-Flaticon-layout-design-interface-square-button-outline: "\f110";
+    $font-Flaticon-layout-design-with-header-square-button-outline: "\f111";
+    $font-Flaticon-layout-square-outlined-button-of-three-columns-with-the-header: "\f112";
+    $font-Flaticon-list-interface-items: "\f113";
+    $font-Flaticon-locked-padlock-outline: "\f114";
+    $font-Flaticon-map-folded-paper-outline: "\f115";
+    $font-Flaticon-menu-of-three-lines: "\f116";
+    $font-Flaticon-minus-horizontal-straight-line: "\f117";
+    $font-Flaticon-moon-crescent-phase-outline: "\f118";
+    $font-Flaticon-musical-note: "\f119";
+    $font-Flaticon-pencil-outline: "\f11a";
+    $font-Flaticon-placeholder-outline: "\f11b";
+    $font-Flaticon-play-right-arrow-triangle-outline: "\f11c";
+    $font-Flaticon-plus-sign-to-add: "\f11d";
+    $font-Flaticon-power-button: "\f11e";
+    $font-Flaticon-right-arrows-couple: "\f11f";
+    $font-Flaticon-search: "\f120";
+    $font-Flaticon-speaker-less-volume-outlined-interface-sign: "\f121";
+    $font-Flaticon-speaker-outline-with-equal-sign: "\f122";
+    $font-Flaticon-speaker-plus-sign: "\f123";
+    $font-Flaticon-speaker-volume-outlined-interface-tool: "\f124";
+    $font-Flaticon-square-button-outline-of-three-vertical-bars: "\f125";
+    $font-Flaticon-square-outlined-shape: "\f126";
+    $font-Flaticon-star-outline: "\f127";
+    $font-Flaticon-sunny-day: "\f128";
+    $font-Flaticon-table-grid-of-nine-squares: "\f129";
+    $font-Flaticon-tag-outline: "\f12a";
+    $font-Flaticon-three-circles-and-a-bolt: "\f12b";
+    $font-Flaticon-three-circles-group: "\f12c";
+    $font-Flaticon-two-switches: "\f12d";
+    $font-Flaticon-two-vertical-parallel-lines: "\f12e";
+    $font-Flaticon-up-arrow-lines: "\f12f";
+    $font-Flaticon-user-outline: "\f130";
+    $font-Flaticon-verification-mark: "\f131";
